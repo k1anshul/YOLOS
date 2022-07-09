@@ -1,0 +1,12 @@
+#--------------------- Inference Parameters ---------------------#
+
+model_path: './run/Exp2/best.pt'                      # Trained model weight path
+test_data: './dataset/test/'                          # Folder path for test data
+output_fld: './dataset_output/test/'                  # Folder path to save the predictions from models
+
+model_name: 'hustvl/yolos-small'                      # Pretrained model name
+id2label: ['creatures','fish','jellyfish','penguin','puffin','shark','starfish','stingray'] # Available categories to detect from data set. Order should be same as the index from JSON file.
+
+imgz: 512                                             # Image Size for model training
+confidenec: 0.2                                       # Confidence above which prediction should be consider
+iou: 0.25                                             # Cut-off to suppress overlapping bbox. 0.25 indicates bbox of same class have IOU >= 0.25 will be suppress and the one with higher image confidence will be retain.

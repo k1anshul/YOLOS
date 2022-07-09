@@ -1,0 +1,9 @@
+#--------------------- Evaluate Parameters ---------------------#
+
+model_path: './run/Exp2/best.pt'     # Trained model weight path
+test_data: './dataset/test/'         # Folder path for test data
+
+model_name: 'hustvl/yolos-small'     # Pretrained model name
+id2label: ['creatures','fish','jellyfish','penguin','puffin','shark','starfish','stingray'] # Available categories to detect from data set. Order should be same as the index from JSON file.
+
+imgz: 512                            # Image Size for model training

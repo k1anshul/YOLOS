@@ -1,0 +1,11 @@
+transformers
+pytorch-lightning
+wandb
+datasets
+pillow
+torchvision
+pycocotools
+scipy
+scikit-learn
+opencv-python
+shapely

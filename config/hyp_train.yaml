@@ -1,0 +1,17 @@
+#--------------------- Training Parameters ---------------------#
+
+train_data: './dataset/train'             # Folder path containing train images and annotations.json file
+valid_data: './dataset/valid'             # Folder path containing validation images and annotations.json file
+
+model_name: 'hustvl/yolos-small'          # Pretrained model name. Available 5 models are yolos-tiny, yolos-small, yolos-base, yolos-small-dwr, yolos-small-300. Reference link:  https://huggingface.co/hustvl
+project: 'YoloS'                          # Project name to show logs on W&B
+exp_name: 'Exp2'                          # Experiment name to save weight files and logs of W&B
+
+imgz: 512                                 # Image Size for model training
+train_bz: 1                               # Training Batch Size
+validation_bz: 1                          # Validation Batch Size
+workers: 8
+
+lr_rate: 2.5e-5                           # Learning Rate while model training
+wd_rate: 1.0e-4                           # Weight Decay while model training
+epoch: 20                                 # Total epoch of model training
