@@ -75,3 +75,9 @@ Once the model has been trained, use the pretrained model to validate it on test
 The predictions from a custom dataset trained on Aquatic Life are shown here. [Aquarium_Dataset](https://public.roboflow.com/ds/AmFElQ6mVE?key=PlQraiiQQ9), which contains six different kinds of aquatic life, was used for model training.
 
 <img src="./images/pred1.jpg" width="400" height="400" /> <img src="./images/pred2.jpg" width="400" height="400" /> <img src="./images/pred3.jpg" width="400" height="400" />
+
+
+### Reference
+
+1. Paper : https://arxiv.org/abs/2106.00666
+2. Models : https://huggingface.co/hustvl
